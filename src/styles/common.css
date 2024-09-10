@@ -1,0 +1,60 @@
+/* 프리텐다드 , font-weight : 100~900으로 두께조절 가능 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/* Radio Canada체 */
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable" !important;
+  caret-color: transparent;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  /* background-color: #fefbf8; */
+  font-family: "Pretendard Variable" !important;
+  /* overflow-x: hidden !important; */
+}
+
+/* input 태그에만 커서 깜빡임 주기 */
+input {
+  caret-color: #355179;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  caret-color: #355179;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+.wrap {
+  position: relative;
+}
+.inner {
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+}
