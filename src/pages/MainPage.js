@@ -1,3 +1,4 @@
+import "../styles/common.css";
 import styled from "@emotion/styled";
 import MainPageImg from "../images/main-page.jpg";
 import MainPageLogo from "../images/mydiary_white_logo.png";
@@ -8,7 +9,7 @@ import Polaroid from "../components/Polaroid";
 
 const MainPageStyle = styled.div`
   width: 100%;
-  height: 1080px;
+  min-height: 100vh;
   background-image: url(${MainPageImg});
   background-size: cover;
   background-position: center;
@@ -16,6 +17,8 @@ const MainPageStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px; /* 헤더 높이만큼 여백을 추가하여 내용이 헤더 아래로 위치하도록 */
+  box-sizing: border-box;
 
   .main-logo {
     width: 400px;

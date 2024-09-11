@@ -2,10 +2,10 @@
 // primary는 주색상, 숫자가 높아질수록 어두워짐
 export const colorSystem = {
   primary: "#40C0E7",
-  p100: "#9bdef2",
-  p200: "#84d6f0",
-  p300: "#6dcfed",
-  p400: "#57c7ea",
+  p100: "#dff4fb",
+  p200: "#c8edf8",
+  p300: "#9bdef2",
+  p400: "#6dcfed",
   p500: "#40C0E7",
   p600: "#29b9e4",
   p700: "#1bacd9",

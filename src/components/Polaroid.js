@@ -34,7 +34,7 @@ const PolaroidStyle = styled.div`
 
   .caption {
     padding: 5px;
-    font-family: "HakgyoansimGeurimilgiTTF-R", cursive;
+    font-family: "HakgyoansimGeurimilgiTTF-R", cursive !important;
     font-size: 1.2rem;
     font-weight: 500;
     color: ${colorSystem.g900};

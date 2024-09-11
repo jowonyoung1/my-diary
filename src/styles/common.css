@@ -26,6 +26,11 @@ body {
   /* overflow-x: hidden !important; */
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 /* input 태그에만 커서 깜빡임 주기 */
 input {
   caret-color: #355179;
