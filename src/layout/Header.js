@@ -6,6 +6,8 @@ import styled from "@emotion/styled";
 import { Link, useLocation } from "react-router-dom";
 
 const HeaderStyle = styled.header`
+  display: flex;
+  align-items: center;
   position: fixed;
   width: 100%;
   min-height: 100px;
@@ -18,10 +20,27 @@ const HeaderStyle = styled.header`
 `;
 
 const TransparentHeader = styled(HeaderStyle)`
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
   background: rgba(0, 0, 0, 0.1);
   color: #fff; /* 투명 배경 위의 글자 색상 조정 */
+
+  ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+  li {
+    display: flex;
+  }
+
+  .nav-menu {
+    color: #fff;
+  }
+
+  .login {
+    color: #fff;
+  }
 `;
 
 const Logo = styled.img`
@@ -36,6 +55,26 @@ const Header = () => {
     <TransparentHeader>
       <Link to="/">
         <Logo src={MainPageLogo} alt="Site Logo" />
+      </Link>
+      <ul>
+        <li>
+          <Link to="/">
+            <div className="nav-menu">about</div>
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            <div className="nav-menu">diary</div>
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            <div className="nav-menu">calendar</div>
+          </Link>
+        </li>
+      </ul>
+      <Link to="/loginregister">
+        <div className="login">로그인</div>
       </Link>
     </TransparentHeader>
   ) : (

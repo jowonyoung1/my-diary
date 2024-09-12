@@ -9,7 +9,7 @@ const FooterStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: ${colorSystem.g900};
   background: ${colorSystem.p100};
 
@@ -44,7 +44,7 @@ const FooterTop = styled.div`
 const FooterBottom = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
   .footer-logo {
@@ -61,10 +61,17 @@ const FooterBottom = styled.div`
 
   li {
     display: flex;
-    padding: 5px;
+    padding: 3px;
     > p {
+      font-size: 0.8rem;
       margin-right: 5px;
     }
+  }
+
+  .copyright {
+    margin-top: 7px;
+    color: ${colorSystem.g700};
+    font-size: 0.8rem;
   }
 `;
 
@@ -96,9 +103,8 @@ const Footer = () => {
               <li>
                 <p>대구광역시 중구 중앙로1, 중앙빌딩 5층 |</p>
                 <p>사업자등록번호: 111-11-11111 |</p>
-                <p>통신판매업 제11 대구</p>
               </li>
-              <li>© 2024 My Diary. All Rights Reserved.</li>
+              <li className="copyright">© 2024 My Diary. All Rights Reserved.</li>
             </ul>
           </div>
         </FooterBottom>
